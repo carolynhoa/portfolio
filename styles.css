@@ -257,13 +257,13 @@ h3 spline-viewer {
 
 @media (max-width: 768px) {
     .scroll-container {
-        padding-top: 22vh;
+        padding-top: 25vh;
     }
 }
 
 @media (max-width: 480px) {
     .scroll-container {
-        padding-top: 11vh; 
+        padding-top: 15vh; 
     }
 }
 
