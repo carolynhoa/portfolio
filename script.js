@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         document.querySelector('.spinner-wrapper').style.display = 'none';
         startTypingAnimation();
-    }, 3000); //3 seconds
+    }, 10); 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
