@@ -259,25 +259,13 @@ h3 spline-viewer {
     .scroll-container {
         padding-top: 25vh;
     }
-
-    #typing-container {
-        font-size: 3vh !important; 
-    }
-    
-
 }
 
 @media (max-width: 480px) {
     .scroll-container {
         padding-top: 15vh; 
-    }
-
-    
-    #typing-container {
-        font-size: 3vh !important; 
-    }
-    
-    }
+    }   
+}
 
 
 .horizontal-content {
