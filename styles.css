@@ -221,8 +221,23 @@ h3 {
     align-items: center; 
 }
 
-h3 spline-viewer {
-    width: auto; 
+.logo {
+    width: 15vw; 
+    height:15vw;
+    justify-content: center;
+    z-index: 10500;
+    padding-top: 2vw;
+    padding-left: 5vw;
+}
+
+.logo img {
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: filter 0.3s ease; 
+    z-index: 10500;
 }
 
 
