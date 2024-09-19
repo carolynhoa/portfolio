@@ -218,7 +218,6 @@ h3 {
     z-index: 10000;
     display: flex; 
     justify-content: flex-end; 
-    align-items: center; 
 }
 
 .logo {
@@ -232,8 +231,8 @@ h3 {
 
 .logo img {
     display: block;
-    width: 8vw;
-    height: 8vw;
+    width: 8px;
+    height: 8px;
     object-fit: cover; 
     border-radius: 10px;
     transition: filter 0.3s ease; 
@@ -246,7 +245,7 @@ h3 {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    padding-top: 15px;
+    padding-top: 10px;
     line-height: 1.2;
     padding-left: 1vw;
 
@@ -272,13 +271,13 @@ h3 {
 
 @media (max-width: 768px) {
     .scroll-container {
-        padding-top: 25vh;
+        padding-top: 22vh;
     }
 }
 
 @media (max-width: 480px) {
     .scroll-container {
-        padding-top: 15vh; 
+        padding-top: 11vh; 
     }
 }
 
