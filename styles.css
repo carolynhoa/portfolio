@@ -213,16 +213,15 @@ h3 {
     height: 200px; 
     width: 100%; 
     position: fixed; 
+    bottom: 0;
     margin: 0; 
-    z-index: 10500;
+    padding: 1rem; 
+    z-index: 10000;
     display: flex; 
-    top: 1vh;
-    right: 15vw
+    justify-content: flex-end; 
 }
 
 h3 spline-viewer {
-    padding-left: 12vw;
-    margin-bottom: 10vh;
     width: 90%;
 }
 
