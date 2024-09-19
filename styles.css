@@ -147,10 +147,9 @@ h1 {
     background-color: transparent;
     display: flex;
     gap: 1rem; 
-    z-index: 1000; 
     cursor: none;
     flex-wrap: wrap;
-    z-index: 10800;
+    z-index: 10100;
 }
 
 .nav-text {
