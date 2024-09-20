@@ -504,12 +504,6 @@ ul {
     cursor: none;
 }
 
-.expanded-image {
-    max-width: 50%; 
-    max-height: 50%; 
-    border-radius: 10px;
-}
-
 .images-container {
     display: flex;
     transition: transform 0.5s ease;
