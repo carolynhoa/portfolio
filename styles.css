@@ -586,6 +586,7 @@ ul {
     color: #fff;
 }
 
+
 .image-border {
     width: 15vw;
     height: 31vh;
@@ -659,5 +660,4 @@ ul {
     line-height: 1.5;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    z-index: 10200;
 }
