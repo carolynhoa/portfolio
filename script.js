@@ -76,8 +76,7 @@ function startSecondTypingAnimation() {
 document.addEventListener('wheel', function (event) {
     if (event.deltaY !== 0) { 
         document.querySelector('.scroll-container').scrollLeft += event.deltaY;
-        event.preventDefault(); // Prevent default vertical scrolling
-    }
+        event.preventDefault();     }
 });
 
 window.addEventListener('load', () => {
@@ -143,17 +142,41 @@ document.addEventListener('DOMContentLoaded', () => {
 const imageBorders = document.querySelectorAll('.image-border img');
 const overlay = document.getElementById('overlay');
 const expandedImage = document.getElementById('expandedImage');
+const expandedText = document.getElementById('expandedText');
+const expandedLink = document.getElementById('expandedLink');
+const prototypeLink = document.getElementById('prototypeLink');
 
-imageBorders.forEach((img) => {
+imageBorders.forEach((img, index) => {
     img.addEventListener('click', function () {
-        expandedImage.src = this.src; 
-        overlay.style.display = 'flex'; 
+        expandedImage.src = this.src;
+        const textContent = this.dataset.description || "No description available.";
+        expandedText.textContent = textContent;
+        const link = this.dataset.link || "#";
+        expandedLink.href = link;
+        expandedLink.style.display = link === "#" ? "none" : "inline-block";
+        
+        if (index === 0) {
+            prototypeLink.style.display = "inline-block";
+            prototypeLink.href = "https://www.figma.com/proto/UjSQsHqYdBlANomZzfeQlt/archetype.?node-id=32-1190&node-type=canvas&t=76IvChzjp5FjTdY2-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A57";
+            prototypeLink.textContent = "Prototype";
+        } else if (index === 1) {
+            prototypeLink.style.display = "inline-block";
+            prototypeLink.href = "https://www.figma.com/proto/C8PsFeUMo9pl2w11RUsODN/ThoughtTrail?t=eQOTMHfyMqI54qe5-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=111-112";
+            prototypeLink.textContent = "Prototype";
+        } else if (index === 2) {
+            prototypeLink.style.display = "inline-block";
+            prototypeLink.href = "https://www.figma.com/proto/8hUmIicen2UfJNLlymbGVr/Munch-N'-Go?t=X0Ww3bNKfIBC27j6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=17-98&starting-point-node-id=17%3A98";
+            prototypeLink.textContent = "Prototype";
+        } else {
+            prototypeLink.style.display = "none";
+        }
+        overlay.style.display = 'flex';
     });
 });
 
 const closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', function () {
-    overlay.style.display = 'none'; 
+    overlay.style.display = 'none';
 });
 
 const galleryContainer = document.querySelector('.gallery-container');
