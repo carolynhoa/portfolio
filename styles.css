@@ -518,6 +518,74 @@ ul {
     width: max-content; 
 }
 
+.expanded-content {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: #000;
+    border-radius: 10px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+    white-space: normal; /* Allow text to wrap */
+
+    
+}
+
+.expanded-image {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.expanded-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+    white-space: normal; /* Allow text to wrap */
+
+}
+
+.expanded-text {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+    white-space: normal; /* Allow text to wrap */
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expanded-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.expanded-link-button:hover {
+    background-color: #808080;
+    color: #fff;
+}
+
 .image-border {
     width: 15vw;
     height: 31vh;
