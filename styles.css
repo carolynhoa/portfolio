@@ -527,7 +527,7 @@ ul {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     overflow: hidden; 
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal; 
 
     
 }
@@ -547,7 +547,7 @@ ul {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     overflow: hidden; 
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal; 
 
 }
 
@@ -559,7 +559,7 @@ ul {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     overflow: hidden; 
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal; 
 
 }
 
